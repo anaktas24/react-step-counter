@@ -11,6 +11,14 @@ const messages = [
 function App() {
   const step = 1
 
+  function handlePrevious(){
+
+  }
+  function handleNext(){
+
+  }
+
+
   return (
     <>
       <div className='steps'>
@@ -24,8 +32,9 @@ function App() {
       <p className='message'>Step {step}: {messages[step -1]}</p>
 
       <div className='buttons'></div>
-        <button style={{backgroundColor: "#ff3645", color: "#fff"}}>Previous</button>
-        <button style={{backgroundColor: "#ff9954", color: "#fff"}}>Next</button>
+      //We use onClick and call an arrow function that does something specific
+        <button style={{backgroundColor: "#ff3645", color: "#fff"}} onClick={(handlePrevious)}>Previous</button>
+        <button style={{backgroundColor: "#ff9954", color: "#fff"}} onClick={(handleNext)}>Next</button>
 
     </>
   )
