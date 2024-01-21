@@ -25,7 +25,7 @@ function App() {
 
   return (
     <div>
-      <button className='close' onClick={()=>setIsOpen(!isOpen)}>&times;</button>
+      <button className='close' onClick={()=>setIsOpen((is)=> !is)}>&times;</button>
       {isOpen && (
         <div className='steps'>
           <div className='numbers'>
